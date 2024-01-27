@@ -1,10 +1,9 @@
 .idea
-db.sqlite3
 *migrations/
-
 media
 templates
 venv
 
+db.sqlite3
 TODO
 
