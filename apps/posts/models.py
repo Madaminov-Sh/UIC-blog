@@ -12,6 +12,10 @@ class Post(BaseModel):
     author = models.ForeignKey('authors.Author', on_delete=models.CASCADE, related_name='posts')
     category = models.ForeignKey('Category', on_delete=models.CASCADE, related_name='category')
 
+    published_date = models.DateField(auto_now_add=True)
+
+    is_popular = models.BooleanField(default=False)
+
     def __str__(self):
         return self.title
 
